@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+
+  backend:
+    build: ./backend
+    container_name: talkingbi_backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - backend/.env
+
+  frontend:
+    build: ./vite-frontend
+    container_name: talkingbi_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

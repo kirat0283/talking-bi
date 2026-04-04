@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pandas
+sqlalchemy
+psycopg2-binary
+python-dotenv
+langchain
+langchain-core
+langchain-groq
+langchain-community
+langchain-experimental
+pg8000
