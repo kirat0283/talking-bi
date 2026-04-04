@@ -2,16 +2,7 @@ FROM node:22
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
-
-# copy env FIRST
-COPY .env .env
-
-# copy project
-COPY . .
-
-RUN npm run build
+COPY dist ./dist
 
 RUN npm install -g serve
 
