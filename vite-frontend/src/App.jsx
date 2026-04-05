@@ -52,7 +52,7 @@ function App() {
     setDataPayload(null);
     
     try {
-      const response = await axios.post('http://localhost:8000/chat', { query: queryText });
+      const response = await axios.post('http://13.51.174.126:8000/chat', { query: queryText });
       const currentData = response.data;
       
       // Push string into history only if success
